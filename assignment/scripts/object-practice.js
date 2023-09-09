@@ -8,13 +8,14 @@ console.log('***** Object Practice *****')
   - Give it  a numeric 'shoeCount' property
   - Also give it an array 'favThreeFoods'
 */
+
 const me = {
   // TODO - add properties here
   firstName: 'Ashley',
   lastName: 'Wessel',
   hasSiblings: true,
   shoeCount: 35,
-  favThreeFoods: ['pizza', 'pasta', 'sandwiches'],
+  favThreeFoods: ['pizza,' + ' ' + 'pasta,' + ' ' + 'sandwiches']
 };
 console.log('A little about me:', me);
 
@@ -32,6 +33,8 @@ let fullName = me.firstName + ' ' + me.lastName;
 console.log(fullName);
 
 
+
+
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food 
@@ -39,6 +42,8 @@ console.log(fullName);
 
 console.log(me.favThreeFoods[0]);
 console.log(me.favThreeFoods[me.favThreeFoods.length-1]);
+
+
 
 
 /* 4. Change a property of an existing object.
@@ -51,6 +56,7 @@ console.log(me.favThreeFoods[me.favThreeFoods.length-1]);
 console.log(me.shoeCount);
 me.shoeCount += 1;
 console.log(me.shoeCount);
+
 
 
 
@@ -83,3 +89,5 @@ function displayMe(meInput) {
   //}
 }
 displayMe(me);
+
+
